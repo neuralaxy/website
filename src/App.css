@@ -1,6 +1,24 @@
+:root {
+  --text-primary: #00b2ac;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f7f9f9;
+}
+
+.main {
+  margin-top: 3rem;
+}
+
+.container-box {
+  background-color: transparent;
+  position: relative;
+  z-index: 9;
 }

@@ -1,0 +1,54 @@
+#landing {
+  padding-top: 30px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.heading > h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-right: 0.22em;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.heading > h1:hover {
+  text-decoration: underline;
+  color: #076663;
+}
+
+.heading > span {
+  cursor: pointer;
+}
+
+.heading > span:hover {
+  text-decoration: underline;
+}
+
+.product-container {
+  background: #ffffff;
+  width: 65%;
+  /* display: flex; */
+  /* flex: 0.65; */
+  height: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.product-desc > p > span {
+  padding-bottom: 5px;
+}
+
+.product-desc > p > img {
+  width: 100%;
+  height: auto;
+}

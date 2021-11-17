@@ -1,0 +1,40 @@
+.navbar-custom {
+  padding: 0.5% 12%;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.navbar-logo > span {
+  color: var(--text-primary) !important;
+}
+
+.logo {
+  width: 25%;
+}
+
+.nav-theme {
+  background: #101018f8;
+  font-size: 20px;
+}
+
+.animate-navbar {
+  box-shadow: 1px 1px 1px #222;
+  animation: moveDown 0.5s ease-in-out;
+}
+
+.navbar-collapse-custom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
