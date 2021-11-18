@@ -1,5 +1,8 @@
 :root {
   --text-primary: #00b2ac;
+  --success: #dff0d8;
+  --danger: #f2dede;
+  --warning: #fcf8e3;
 }
 
 * {

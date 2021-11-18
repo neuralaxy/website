@@ -52,3 +52,55 @@
   width: 100%;
   height: auto;
 }
+
+.accordion-header-custom {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.comparisons-table {
+  width: 100%;
+}
+
+.comparisons-table,
+.comparisons-table > tr,
+.comparisons-table > tr > th,
+.comparisons-table > tr > td {
+  border: 1px solid #dddddd;
+}
+
+.comparisons-table > tr > th {
+  font-size: 14px;
+}
+
+.product {
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.product:hover {
+  text-decoration: underline;
+}
+
+.bg-success {
+  background: var(--success) !important;
+}
+
+.bg-danger {
+  background: var(--danger) !important;
+}
+
+.bg-warning {
+  background: var(--warning) !important;
+}
+
+.product-desc > p > a {
+  color: var(--text-primary);
+  font-style: italic;
+  text-decoration: none;
+}
+
+.product-desc > p > a:hover {
+  color: #076663;
+  text-decoration: underline;
+}
