@@ -15,13 +15,19 @@ const Support = () => {
                         <br />
                         For instructions and video tutorials on the placement of stimulation electrodes
                         to evoke various muscle contractions, please refer to {" "}
-                        <a href="https://www.axelgaard.com/Education">Electrode Placement & Functional Movement</a>,
+                        <a href="https://www.axelgaard.com/Education" target="_blank" rel="noreferrer">
+                            Electrode Placement & Functional Movement
+                        </a>,
                         courtesy of Dr. Lucinda Baker, Associate Professor (retired) at the University of Southern
                         California and Axelgaard Manufacturing Co., Ltd. For NeuroStimDuino software and
                         design files, please see {" "}
-                        <a href="https://github.com/neuralaxy/NeuroStimDuino">our GitHub repository</a>.
+                        <a href="https://github.com/neuralaxy/NeuroStimDuino" target="_blank" rel="noreferrer">
+                            our GitHub repository
+                        </a>.
                         If you have questions, you can use the {" "}
-                        <a href="https://www.crowdsupply.com/neuralaxy/neurostimduino/ask-question">Ask a technical question</a>
+                        <a href="https://www.crowdsupply.com/neuralaxy/neurostimduino/ask-question" target="_blank" rel="noreferrer">
+                            Ask a technical question
+                        </a>
                         {" "} link below.
                     </Accordion.Body>
                 </Accordion.Item>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
+import img2 from "../../../assets/images/Neurostimduino-front-01.png";
 
 import "./Features.style.css";
 
@@ -68,6 +69,8 @@ const Features = () => {
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
+            <br />
+            <img src={img2} alt="" />
         </>
     )
 }

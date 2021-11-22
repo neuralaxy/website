@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../assets/images/Neurostimduino-angle-02.png";
+import img1 from "../../../assets/images/Neurostimduino-angle-02.png";
 
 import "./Description.style.css";
 

@@ -115,3 +115,15 @@ link below.
 
 {neurostimduino-front-01, neurostimduino-back-01}
 
+
+
+
+
+
+
+Tutorial 1: Getting Started (Readme.MD file of neuralaxy/neurostimduino)
+Tutorial 2: Electrodes Placement
+Tutorial 3: Controlling Multiple NeuroStimDuinos on a single I2C Bus
+
+
+<a>Buy it now</a> on Mouser (https://www.mouser.in/ProductDetail/Neuralaxy/CS-NEUROSTIM-01?qs=QNEnbhJQKvY9Tz7O%252BXdcKw==)

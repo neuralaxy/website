@@ -1,12 +1,11 @@
 import React from "react";
-import Description from "../Description/Description.component";
-import Features from "../Features/Features.component";
-import Specifications from "../Specifications/Specifications.component";
-import Comparisons from "../Comparisons/Comparisons.component";
-import BoardLayout from "../BoardLayout/BoardLayout.component";
-import PinoutDiagram from "../PinoutDiagram/PinoutDiagram.component";
-import Support from "../Support/Support.component";
-import img2 from "../../assets/images/Neurostimduino-front-01.png";
+import Description from "./Description/Description.component";
+import Features from "./Features/Features.component";
+import Specifications from "./Specifications/Specifications.component";
+import Comparisons from "./Comparisons/Comparisons.component";
+import BoardLayout from "./BoardLayout/BoardLayout.component";
+import PinoutDiagram from "./PinoutDiagram/PinoutDiagram.component";
+import Support from "./Support/Support.component";
 
 import "./Landing.style.css";
 
@@ -30,8 +29,6 @@ const Landing = () => {
                             <Description />
                             <br /><br />
                             <Features />
-                            <br />
-                            <img src={img2} alt="" />
                             <br /><br />
                             <Specifications />
                             <br />

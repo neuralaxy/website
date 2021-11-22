@@ -1,5 +1,5 @@
 import React from "react";
-import img3 from "../../assets/images/NeuroStimDuino_Components.png";
+import img3 from "../../../assets/images/NeuroStimDuino_Components.png";
 
 import "./BoardLayout.style.css";
 

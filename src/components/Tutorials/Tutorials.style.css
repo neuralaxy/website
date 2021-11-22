@@ -1,0 +1,48 @@
+#tutorials {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.tutorials-container {
+  background: #ffffff;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.left-bar {
+  flex: 0.3;
+  margin-right: 15px;
+}
+
+.left-bar-item {
+  background: rgba(0, 178, 172, 0.6);
+  border-radius: 5px;
+  padding: 10px 5px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.left-bar-item:hover {
+  background: rgba(0, 178, 172, 1);
+  transition: all 300ms ease-in-out;
+}
+
+.selected {
+  background: rgba(0, 178, 172, 1);
+}
+
+.right-bar {
+  flex: 0.7;
+  margin-left: 15px;
+}
+
+.right-bar > div > h3 {
+  padding-top: 10px;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import img4 from "../../assets/images/NeuroStimDuino_Pinout_Diagram.png";
+import img4 from "../../../assets/images/NeuroStimDuino_Pinout_Diagram.png";
 
 import "./PinoutDiagram.style.css";
 

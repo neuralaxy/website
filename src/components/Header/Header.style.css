@@ -5,6 +5,8 @@
 .navbar-logo {
   font-size: 24px;
   font-weight: 600;
+  font-style: normal;
+  text-decoration: none !important;
 }
 
 .navbar-logo > span {
@@ -28,6 +30,11 @@
 .navbar-collapse-custom {
   display: flex;
   justify-content: flex-end;
+}
+
+.nav-link {
+  text-decoration: none !important;
+  font-style: normal;
 }
 
 @keyframes moveDown {
