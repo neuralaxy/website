@@ -23,7 +23,7 @@ const Header = () => {
                     <Nav.Link href="#about" className="nav-link">About</Nav.Link>
                     <Nav.Link onClick={() => navigateTo("tutorials")}>Tutorials</Nav.Link>
                     <Nav.Link href="#updates">Updates</Nav.Link>
-                    <Nav.Link href="#contact">Contact Us</Nav.Link>
+                    <Nav.Link onClick={() => navigateTo("contact-us")}>Contact Us</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

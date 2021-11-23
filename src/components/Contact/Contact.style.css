@@ -1,0 +1,28 @@
+#contact {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-container {
+  background: #ffffff;
+}
+
+.contact-heading {
+  color: var(--text-primary);
+}
+
+.btn-custom {
+  background: var(--text-primary);
+  color: #ffffff;
+}
+
+.btn-custom:hover {
+  color: #000000;
+  background: inherit;
+  box-shadow: none;
+}

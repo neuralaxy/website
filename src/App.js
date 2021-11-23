@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import Header from "./components/Header/Header.component";
 import Landing from "./components/Landing/Landing.component";
 import Tutorials from "./components/Tutorials/Tutorials.component";
+import Contact from "./components/Contact/Contact.component";
 
 import "./App.css";
 
@@ -23,6 +24,13 @@ const App = () => {
                     <div className="main">
                         <Container className="container-box rounded">
                             <Tutorials />
+                        </Container>
+                    </div>
+                </Route>
+                <Route path="/contact-us">
+                    <div className="main">
+                        <Container className="container-box rounded">
+                            <Contact />
                         </Container>
                     </div>
                 </Route>
