@@ -9,34 +9,34 @@ import Contact from "./components/Contact/Contact.component";
 import "./App.css";
 
 const App = () => {
-    return (
-        <div className="app">
-            <Header />
-            <Switch>
-                <Route exact path="/">
-                    <div className="main">
-                        <Container className="container-box rounded">
-                            <Landing />
-                        </Container>
-                    </div>
-                </Route>
-                <Route path="/tutorials">
-                    <div className="main">
-                        <Container className="container-box rounded">
-                            <Tutorials />
-                        </Container>
-                    </div>
-                </Route>
-                <Route path="/contact-us">
-                    <div className="main">
-                        <Container className="container-box rounded">
-                            <Contact />
-                        </Container>
-                    </div>
-                </Route>
-            </Switch>
-        </div>
-    )
-}
+  return (
+    <div className="app">
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <div className="main">
+            <Container className="container-box rounded">
+              <Landing />
+            </Container>
+          </div>
+        </Route>
+        <Route path="/tutorials">
+          <div className="main">
+            <Container className="container-box rounded">
+              <Tutorials />
+            </Container>
+          </div>
+        </Route>
+        <Route path="/contact-us">
+          <div className="main">
+            <Container className="container-box rounded">
+              <Contact />
+            </Container>
+          </div>
+        </Route>
+      </Switch>
+    </div>
+  );
+};
 
 export default App;

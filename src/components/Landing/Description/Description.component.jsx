@@ -1,11 +1,20 @@
 import React from "react";
 import img1 from "../../../assets/images/Neurostimduino-angle-02.png";
+import Vimeo from "@u-wave/react-vimeo";
 
 import "./Description.style.css";
 
 const Description = () => {
     return (
         <>
+            <div className="video-player">
+                <Vimeo  
+                    className="video"
+                    video="https://player.vimeo.com/video/522539924?h=457ae7e579"
+                    autoplay={false}
+                    responsive
+                />
+            </div>
             Neurostimulation is the application of short electrical 
             pulses to the surface of the skin for the purpose of 
             stimulating the underlying nerves and muscles. In recent 
