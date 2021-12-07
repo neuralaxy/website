@@ -1,0 +1,129 @@
+#### NeuroStimDuino was part of the [Microchip Get Launched](https://www.crowdsupply.com/microchip/get-launched) design program.
+
+{get-launched-logo2019-size3 | small}
+
+Neurostimulation is the application of short electrical pulses to the surface of
+the skin for the purpose of stimulating the underlying nerves and muscles. In
+recent decades, neurostimulation has been used as part of a treatment called
+Functional Electrical Stimulation (FES) therapy to help restore mobility in the
+paralyzed limb muscles of stroke victims and those who have suffered spinal cord
+injuries. While carrying out research in areas such as pain reduction and
+sensory feedback, scientists have also used neurostimulation to study the effect
+of electrical current on neurons.
+
+Historically, the delivery of neurostimulation has required the purchase of
+expensive, research-grade equipment or the expensive, time-consuming
+construction of custom hardware. NeuroStimDuino provides an open-source
+alternative in the form of an Arduino shield.
+
+### Affordable, Accessible, and Easy to Use
+
+NeuroStimDuino was designed to help anyone with an interest in
+neuroscience—students, researchers, and hobbyists alike—to study the effects of
+neurostimulation on muscle contraction. It comes with an I²C interface through
+which external microcontroller boards like the Arduino Due can be used to
+generate different stimulation patterns and control other aspects of its
+operation. Each NeuroStimDuino shield has two independent output channels, which
+can be used to alternate the contraction of flexor and extensor muscles or to
+contract various muscles simultaneously. By stacking multiple shields,
+additional output channels can be made available.
+
+_**Note**: A single output channel on NeuroStimDuino is capped at 20 mA, which
+is sufficient to contract small muscles but insufficient to contract large ones.
+Large muscles can be contracted by combining the two output channels of
+NeuroStimDuinos in parallel._
+
+{neurostimduino-two-boards-stacked-whitebg-rect}
+
+### Opens the Door to Many Different Areas of Research
+
+NeuroStimDuino is a platform technology with many possible applications. It can
+be used to conduct research on how neurostimulation affects pain management and
+the restoration of mobility to paralyzed extremities. It can also provide
+sensory feedback to amputees and stimulate the transcutaneous vagus nerve to
+study the effects of neurostimulation on depression, arthritis, and other
+conditions.
+
+_**WARNING**: This instrument is intended for RESEARCH PURPOSES ONLY. It is not
+intended for human or animal use. Neuralaxy LLC does not assume responsibility
+for injury or damage due to the misuse of this instrument._
+
+## Features
+
+- Generates biphasic, rectangular, and constant current stimulation pulses with programmable frequency, pulse-width, and amplitude
+- Stimulation pulses are charge-balanced, consisting of a cathodic phase followed by an anodic phase of equal or unequal amplitudes (i.e. the waveform shape can be symmetrical or asymmetrical)
+- Can be configured over I²C, from an external microcontroller acting as the controller
+- Can be used as an Arduino shield, due to pin-compatibility with Arduino Due and MEGA boards
+- Has two independent output channels per board. Multiple boards can be stacked to generate up to 222 channels.
+- Onboard opto-isolators separate digital and analog signals
+- Can be powered by a 9 V battery connected to a DC input or by an external 5 V input on VIN. For proper operation, we recommend two Li-Ion batteries (e.g. 18650s) connected in series. (Batteries not included.)
+- Onboard LEDs visually indicate when neurostimulation is delivered, and a precision current-sense amplifier provides a voltage output proportional to the stimulation current.
+- Includes several safety features such as fuses, an emergency OFF switch, and solid-state relays to shunt inputs with low impedance resistors
+- Comes with a pair of 2 mm pin-style lead wires to connect with standard, reusable, hydrogel-based stimulation electrodes
+
+{neurostimduino-connected}
+
+## Technical Specifications
+
+- Adjustable current output range:  +/- 20 mA, resolution 240 µA/step	
+- Adjustable stimulation frequency range: 1 – 100 Hz, pulse-width 0 – 2 ms
+- Maximum compliance voltage: +/- 60 V (uses +/- 72V High-voltage supply)
+- The onboard 16-bit dsPIC33F Microcontroller (40 MIPS, 256 KB flash memory) operates as an I²C peripheral with a programmable, 7-bit address.
+- Stimulation current output can be measured using the onboard 12-bit ADC or an external ADC.
+- The PCB includes a microUSB interface but the components are not populated. (Upon request, we are happy to provide a list of the necessary components.) If populated, this interface can be used to control NeuroStimDuino from a PC by way of serial commands.
+
+
+## Comparisons
+
+|                                                          | NeuroStimDuino    | [LG-TEC ELITE][1]   | [DS4][2]          |
+| -------------------------------------------------------- | --------------    | -----------------   | ----------        |
+| **Manufacturer** ~active                                 | Neuralaxy ~active | LGMedSupply ~active | Digitimer ~active |
+| **Max. Current Output** ~active                          | +/- 20 mA ~active | 105 mA ~active      | +/- 10 mA ~active |
+| **Compliance Voltage** ~active                           | +/- 60 V ~active  | 105 V ~active       | +/- 48 V ~active  |
+| **No. of Output Channels**                               | 2 ~success        | 2 ~success          | 1 ~danger         |
+| **Additional output channels possible by stacking**      | Yes ~success      | No ~danger          | No ~danger        |
+| **Waveform Shape**                                       | Biphasic ~success | Monophasic ~danger  | Biphasic ~success |
+| **Electronically Programmable**                          | Yes ~success      | No ~danger          | Yes ~success      |
+| **Open Source**                                          | Yes ~success      | No ~danger          | No ~danger        |
+| **Onboard Current Measurement**                          | Yes ~success      | No ~danger          | No ~danger        |
+| **FDA approved**                                         | No ~danger        | Yes ~success        | No ~danger        |
+| **Price**                                                | $260 ~warning     | $150 ~success       | $2250 ~danger     |
+
+[1]: https://www.lgmedsupply.com/lgelteunandm.html
+[2]: https://www.digitimer.com/product/life-science-research/stimulators/ds4-bi-phasic-current-stimulator/
+
+## Board Layout
+
+{neurostimduino-components-diagram | link}
+
+## Pinout Diagram
+
+{neurostimduino-pinout-diagram | link}
+
+## Support & Documentation
+
+For instructions and video tutorials on the placement of stimulation electrodes
+to evoke various muscle contractions, please refer to [*Electrode Placement &
+Functional Movement*](https://www.axelgaard.com/Education), courtesy of Dr.
+Lucinda Baker, Associate Professor (retired) at the University of Southern
+California and Axelgaard Manufacturing Co., Ltd. For NeuroStimDuino software and
+design files, please see [our GitHub
+repository](https://github.com/neuralaxy/NeuroStimDuino). If you have questions,
+you can use the [*Ask a technical
+question*](https://www.crowdsupply.com/neuralaxy/neurostimduino/ask-question)
+link below.
+
+{neurostimduino-front-01, neurostimduino-back-01}
+
+
+
+
+
+
+
+Tutorial 1: Getting Started (Readme.MD file of neuralaxy/neurostimduino)
+Tutorial 2: Electrodes Placement
+Tutorial 3: Controlling Multiple NeuroStimDuinos on a single I2C Bus
+
+
+<a>Buy it now</a> on Mouser (https://www.mouser.in/ProductDetail/Neuralaxy/CS-NEUROSTIM-01?qs=QNEnbhJQKvY9Tz7O%252BXdcKw==)

@@ -1,0 +1,29 @@
+#demo {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.demo-container {
+  background: #ffffff;
+  padding: 10px;
+}
+
+.demo-container .heading {
+  margin-bottom: 20px;
+}
+
+.demo-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.demo-video > video {
+  width: 80%;
+}

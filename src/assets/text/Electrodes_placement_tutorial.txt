@@ -1,0 +1,48 @@
+# Tips on Electrode Placement and Muscle Mapping
+
+This tutorial will share tips on how to place the hydrogel electrodes on the surface of the skin in order to stimulate underlying muscles. These tips will be helpful not just when using NeuroStimDuino, but for any neurostimulator. But first, let's review some **important safety guidelines:** 
+* NeuroStimDuino is not an FDA approved product for clinical use and it is intended for **RESEARCH PURPOSES ONLY**. 
+* NeuroStimDuino is not intended for human use or animal use, without receiving prior approval from a local ethics committee such as Institutional Review Boards and Institutional Animal Care and Use Committees  
+* Under no circumstances, should the stimulation electrodes be placed across the chest or close to the heart
+* NeuroStimDuino requires an external DC input voltage from 6-20V to operate. We **strongly** recommend to use an external battery for this and avoid the use of an AC adapter or anything that's plugged into the AC mains
+
+In case you are wondering, how exactly are you suppose to learn to apply neurostimulation if you can't use it without getting all the approvals, you are not alone. You could use a frog or a cockroach for your experiments and BackyardBrains has provided a great article on how to do this in a [humane way](https://backyardbrains.com/experiments/Galvani_Volta). (Scroll all the way to the video at the bottom to see how a cockroach's leg twitches under electricity.) However, if you still don't want to mess with a cockroach or want a completely humane way to do your experiments, check out our tips on safely exploring neurostimulation using just [**Zucchinis**](https://www.crowdsupply.com/neuralaxy/neurostimduino/updates/tips-on-electrode-placement).
+
+If you have already **received approval** from your ethics committee and ready to start stimulating human muscles, then lets dive into it. You will probably recall from one of the demo videos, how by using 3 electrodes on the forearm and 1 on the palm, I was able to implement a cylindrical grasp and hold a cup 
+
+![electrodePlacement1](https://user-images.githubusercontent.com/9390371/112884809-f0d9c180-909d-11eb-8b8f-b0f4a1283b48.png)
+Today, I will share tips on how to map muscles of the hand, so that you know where exactly to attach the hydrogel electrodes onto the skin. These tips will be helpful not just when using NeuroStimDuino, but for any neurostimulator. First, lets review some anatomy of the hand. 
+![1478349506_the-muscles-of-the-arm-and-hand](https://user-images.githubusercontent.com/9390371/112885469-ce947380-909e-11eb-847a-3598cac7c29e.jpg)
+
+# Review Anatomy of Hand Flexors and Extensors
+To generate finger flexion or extension, we need to stimulate the flexor digitorum superficialis and extensor digitorum muscles, as highlighted above. The flexor digitorum superficialis muscle is slightly deeper and lies beneath a pair of flexor carpi muscles that control wrist movement. Therefore, targeting the finger flexors can be tricky and you might inadvertently cause the wrist to flex as well. However, by using electrodes that are not too big and by placing them appropriately as well as keeping the stimulation amplitude low, you should still be able to flex all the fingers. Also, the extensors are bunched together and are near the skin surface. Hence, they can be simultaneously activated using one electrode placed on the back of the forearm. Note that in the first figure, I additionally placed a small round electrode near the base of the thumb. This electrode was working in parallel with the finger flexor electrode by using cable splitters on channel 1, so as to get stronger thumb flexion as well. 
+
+# Sourcing and Sinking Current through a Muscle
+![NeuroStim_Principle_final](https://user-images.githubusercontent.com/9390371/112892976-0a800680-90a8-11eb-88b4-33a9bd3ffb45.jpg)
+
+The above sketch is a rough diagram of how neurostimulation works.  You can imagine the stimulator (e.g. NeuroStimDuino) to behave as two constant current sources connected in series. Each current source is powered by a high voltage source (i.e +/-72V) so that it can drive several milliamps of current through the skin surface (a.k.a compliance voltage). The top current source is active during the positive or anodic phase of the stimulation pulse (shown by <span style="color:pink">*pink* </span> marker). The bottom current sink is active during the negative or cathodic phase of the stimulation pulse (shown by <span style="color:green">*green* </span> marker). The current is sourced or sink from the muscles using the hydrogel electrodes placed on the skin surface. One electrode is placed over the muscle belly (a.k.a **Working Electrode**) and acts as the main entry or exit point for current. A second electrode is placed at the tail end of the muscle (a.k.a **Return Electrode**),  where it connects to the stimulator ground, completing the return path for the current.
+
+## Use a single "Return" electrode when using multiple channels
+The ground connection is common for all the stimulation channels. So, if you are using multiple stimulation channels, you only **need** to connect one return electrode. If you are stimulating both the finger flexors and extensors, then we recommend placing the return electrode on the lateral side of the wrist (as shown in the topmost figure). If you are stimulating only the flexors, then you can place the return electrode on the median side of the wrist (as shown in below figure). 
+
+## Waveform parameters 
+In the above white-board figure, the waveform is defined by specifying parameters such as amplitude (AMPL), pulse duration (DURN), pulse frequency (FREQ), and inter-phase delay (IDLY). For the cup lifting experiment, we set these values as AMPL = 15mA, DURN = 500usec, FREQ = 30Hz, IDLY = 200usec.
+Kindly refer to the I2C library for an explanation of these terms. 
+
+# Mapping Muscle Location using a Handheld Probe
+When you first start placing electrodes on the arm, it can be frustrating to know where exactly to place the electrodes. You can refer to the anatomy and try to feel the contraction of your muscles, but what definitely works is to use a stimulation probe for this purpose. There are some commercially available TENS probes, also called ball-point pen probes. I found a simple and cheap way to make my own. I used a 1" round electrode, some tape, borrowed my son's percussion stick, and Voila! my handheld mapping probe was ready.
+
+![Handheld_probe](https://user-images.githubusercontent.com/9390371/112896901-f8549700-90ac-11eb-944f-81b16a64633c.png)
+
+## Steps to map muscle location using a handheld probe
+1. Connect the <span style="color:red">*red* </span> lead wire of the channel output to the probe and connect the *black* lead wire to a return electrode placed on the wrist. 
+2. Program the NeuroStimDuino to continuously generate stim. pulses at a moderately high intensity (_to be covered in more detail in an upcoming update_).
+3. Touch the surface of the skin with the probe. Try moving it around by few centimeters and you should be able to start seeing your fingers slightly move. 
+4. With some patience and practise, I was be able to isolate individual finger movements as shown below. 
+5. Once you have the index, middle and ring or pinky mapped out, place a large square electrode such that it encompasses most of the mapped sites (as shown in the topmost figure) 
+6. Repeat the same procedure for mapping the extensor muscle locations. 
+
+![muscle_mapping](https://user-images.githubusercontent.com/9390371/112898723-3357ca00-90af-11eb-8281-1e5f0f9f6333.png)
+
+# Additional Resources
+If you are interested in further instructions and video tutorials on the placement of stimulation electrodes to evoke various hand and leg movements, please refer to [Electrode Placement & Functional Movement](https://www.axelgaard.com/Education), courtesy of Dr. Lucinda Baker, Associate Professor (retired) at the University of Southern California and Axelgaard Manufacturing Co., Ltd.   

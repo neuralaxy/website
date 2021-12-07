@@ -1,0 +1,19 @@
+.video-player {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.video {
+  width: 70%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container > img {
+  width: 50%;
+  height: auto;
+}
