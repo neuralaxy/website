@@ -13,6 +13,11 @@
   color: var(--text-primary) !important;
 }
 
+.navbar-logo > img {
+  width: 300px;
+  height: auto;
+}
+
 .logo {
   width: 25%;
 }
@@ -24,7 +29,7 @@
 
 .animate-navbar {
   box-shadow: 1px 1px 1px #222;
-  animation: moveDown 0.5s ease-in-out;
+  animation: moveDown 1s ease-in-out;
 }
 
 .navbar-collapse-custom {

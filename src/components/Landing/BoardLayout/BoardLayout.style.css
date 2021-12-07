@@ -1,4 +1,9 @@
-.product-desc > p > img {
-  width: 50%;
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container .board-img {
+  width: 70%;
   height: auto;
 }

@@ -10,41 +10,45 @@ import Support from "./Support/Support.component";
 import "./Landing.style.css";
 
 const Landing = () => {
-    return (
-        <section id="landing">
-            <div className="container">
-                <div className="heading">
-                    <h1>NeuroStimDuino</h1>
-                    <span>by Neuralaxy</span>
-                </div>
-                <div className="desc">
-                    <h4>
-                        An open source neurostimulator for students, researchers, 
-                        and hobbyists interested in neuroscience
-                    </h4>
-                </div>
-                <div className="product-container">
-                    <div className="product-desc">
-                        <p>
-                            <Description />
-                            <br /><br />
-                            <Features />
-                            <br /><br />
-                            <Specifications />
-                            <br />
-                            <Comparisons />
-                            <br />
-                            <BoardLayout />
-                            <br /><br />
-                            <PinoutDiagram />
-                            <br /><br />
-                            <Support />
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    )
-}
+  return (
+    <section id="landing">
+      <div className="container">
+        <div className="heading">
+          <h1>NeuroStimDuino</h1>
+          <span>by Neuralaxy</span>
+        </div>
+        <div className="desc">
+          <h4>
+            An open source neurostimulator for students, researchers, and
+            hobbyists interested in neuroscience
+          </h4>
+        </div>
+        <div className="product-container">
+          <div className="product-desc">
+            <p>
+              <Description />
+              <br />
+              <br />
+              <Features />
+              <br />
+              <br />
+              <Specifications />
+              <br />
+              <Comparisons />
+              <br />
+              <BoardLayout />
+              <br />
+              <br />
+              <PinoutDiagram />
+              <br />
+              <br />
+              <Support />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Landing;
