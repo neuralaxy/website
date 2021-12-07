@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.d8e71054.chunk.css",
+    "main.js": "/website/static/js/main.64d75c8b.chunk.js",
+    "main.js.map": "/website/static/js/main.64d75c8b.chunk.js.map",
+    "runtime-main.js": "/website/static/js/runtime-main.c2152086.js",
+    "runtime-main.js.map": "/website/static/js/runtime-main.c2152086.js.map",
+    "static/js/2.98d206b3.chunk.js": "/website/static/js/2.98d206b3.chunk.js",
+    "static/js/2.98d206b3.chunk.js.map": "/website/static/js/2.98d206b3.chunk.js.map",
+    "index.html": "/website/index.html",
+    "static/css/main.d8e71054.chunk.css.map": "/website/static/css/main.d8e71054.chunk.css.map",
+    "static/js/2.98d206b3.chunk.js.LICENSE.txt": "/website/static/js/2.98d206b3.chunk.js.LICENSE.txt",
+    "static/media/NeuroStimDuino_Components.a0e70a97.png": "/website/static/media/NeuroStimDuino_Components.a0e70a97.png",
+    "static/media/NeuroStimDuino_Demo_final.42a98883.mp4": "/website/static/media/NeuroStimDuino_Demo_final.42a98883.mp4",
+    "static/media/NeuroStimDuino_Pinout_Diagram.2fbed988.png": "/website/static/media/NeuroStimDuino_Pinout_Diagram.2fbed988.png",
+    "static/media/Neurostimduino-angle-02.0a8b7af6.png": "/website/static/media/Neurostimduino-angle-02.0a8b7af6.png",
+    "static/media/Neurostimduino-front-01.fe255cde.png": "/website/static/media/Neurostimduino-front-01.fe255cde.png",
+    "static/media/Tutorial-1_Image-1.eb629ce4.png": "/website/static/media/Tutorial-1_Image-1.eb629ce4.png",
+    "static/media/Tutorial-1_Image-10.8654aef0.jpg": "/website/static/media/Tutorial-1_Image-10.8654aef0.jpg",
+    "static/media/Tutorial-1_Image-2.187c1028.png": "/website/static/media/Tutorial-1_Image-2.187c1028.png",
+    "static/media/Tutorial-1_Image-3.828aa284.jpg": "/website/static/media/Tutorial-1_Image-3.828aa284.jpg",
+    "static/media/Tutorial-1_Image-4.ab1e3cd1.jpg": "/website/static/media/Tutorial-1_Image-4.ab1e3cd1.jpg",
+    "static/media/Tutorial-1_Image-5.232ec704.jpg": "/website/static/media/Tutorial-1_Image-5.232ec704.jpg",
+    "static/media/Tutorial-1_Image-6.733002e0.png": "/website/static/media/Tutorial-1_Image-6.733002e0.png",
+    "static/media/Tutorial-1_Image-7.4a4bc4b8.jpg": "/website/static/media/Tutorial-1_Image-7.4a4bc4b8.jpg",
+    "static/media/Tutorial-1_Image-8.067b578e.jpg": "/website/static/media/Tutorial-1_Image-8.067b578e.jpg",
+    "static/media/Tutorial-1_Image-9.dea42279.png": "/website/static/media/Tutorial-1_Image-9.dea42279.png",
+    "static/media/Tutorial-2_Image-1.5dacc327.png": "/website/static/media/Tutorial-2_Image-1.5dacc327.png",
+    "static/media/Tutorial-2_Image-2.8ec64b29.jpg": "/website/static/media/Tutorial-2_Image-2.8ec64b29.jpg",
+    "static/media/Tutorial-2_Image-3.744e6770.jpg": "/website/static/media/Tutorial-2_Image-3.744e6770.jpg",
+    "static/media/Tutorial-2_Image-4.0d01016d.png": "/website/static/media/Tutorial-2_Image-4.0d01016d.png",
+    "static/media/Tutorial-2_Image-5.fc042f7b.png": "/website/static/media/Tutorial-2_Image-5.fc042f7b.png",
+    "static/media/Tutorial-3_Image-1.4a4bc4b8.jpg": "/website/static/media/Tutorial-3_Image-1.4a4bc4b8.jpg",
+    "static/media/Tutorial-3_Image-2.d32b2310.jpg": "/website/static/media/Tutorial-3_Image-2.d32b2310.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2152086.js",
+    "static/js/2.98d206b3.chunk.js",
+    "static/css/main.d8e71054.chunk.css",
+    "static/js/main.64d75c8b.chunk.js"
+  ]
+}
