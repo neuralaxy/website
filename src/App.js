@@ -17,9 +17,10 @@ const App = () => {
       <Switch>
         <Route exact path="/">
           <div className="main">
-            <Container className="container-box rounded">
+            <Landing />
+            {/* <Container className="container-box rounded">
               <Landing />
-            </Container>
+            </Container> */}
           </div>
         </Route>
         <Route path="/tutorials">
