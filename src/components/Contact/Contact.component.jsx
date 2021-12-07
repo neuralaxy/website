@@ -70,7 +70,7 @@ const Contact = () => {
                   <h2 className="main-heading">Address Information</h2>
                   <div className="underline"></div>
                   <p>Neuralaxy LLC, registered in Delaware, USA</p>
-                  <p>+91 93608 42073</p>
+                  {/* <p>+91 93608 42073</p> */}
                   <p>
                     Email:{" "}
                     <a href="mailto:contactus@neuralaxy.com">
