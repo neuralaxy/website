@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2a45bdf.chunk.css",
-    "main.js": "/static/js/main.df0079a5.chunk.js",
-    "main.js.map": "/static/js/main.df0079a5.chunk.js.map",
+    "main.css": "/static/css/main.c4533f23.chunk.css",
+    "main.js": "/static/js/main.bfc09955.chunk.js",
+    "main.js.map": "/static/js/main.bfc09955.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.74cc2952.js",
     "runtime-main.js.map": "/static/js/runtime-main.74cc2952.js.map",
-    "static/js/2.98d206b3.chunk.js": "/static/js/2.98d206b3.chunk.js",
-    "static/js/2.98d206b3.chunk.js.map": "/static/js/2.98d206b3.chunk.js.map",
+    "static/js/2.99c2d0ae.chunk.js": "/static/js/2.99c2d0ae.chunk.js",
+    "static/js/2.99c2d0ae.chunk.js.map": "/static/js/2.99c2d0ae.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b2a45bdf.chunk.css.map": "/static/css/main.b2a45bdf.chunk.css.map",
-    "static/js/2.98d206b3.chunk.js.LICENSE.txt": "/static/js/2.98d206b3.chunk.js.LICENSE.txt",
+    "static/css/main.c4533f23.chunk.css.map": "/static/css/main.c4533f23.chunk.css.map",
+    "static/js/2.99c2d0ae.chunk.js.LICENSE.txt": "/static/js/2.99c2d0ae.chunk.js.LICENSE.txt",
     "static/media/NeuroStimDuino_Components.a0e70a97.png": "/static/media/NeuroStimDuino_Components.a0e70a97.png",
     "static/media/NeuroStimDuino_Demo_final.42a98883.mp4": "/static/media/NeuroStimDuino_Demo_final.42a98883.mp4",
     "static/media/NeuroStimDuino_Pinout_Diagram.2fbed988.png": "/static/media/NeuroStimDuino_Pinout_Diagram.2fbed988.png",
@@ -35,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.74cc2952.js",
-    "static/js/2.98d206b3.chunk.js",
-    "static/css/main.b2a45bdf.chunk.css",
-    "static/js/main.df0079a5.chunk.js"
+    "static/js/2.99c2d0ae.chunk.js",
+    "static/css/main.c4533f23.chunk.css",
+    "static/js/main.bfc09955.chunk.js"
   ]
 }
