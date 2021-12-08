@@ -26,3 +26,14 @@
   background: inherit;
   box-shadow: none;
 }
+
+@media (max-width: 767px) {
+  .custom-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address {
+    margin-top: 10px;
+  }
+}

@@ -9,9 +9,14 @@ const Demo = () => {
     <section id="demo">
       <div className="container">
         <div className="demo-container">
-          <h3 className="heading">
+          <h2 className="heading">
             Here you will find demos of NeuroStimDuino in action
-          </h3>
+          </h2>
+          <ul>
+            <li>
+              <h3>Neuromuscular Stimulation using NeuroStimDuino</h3>
+            </li>
+          </ul>
           <div className="demo-video">
             <video controls>
               <source src={demo1} type="video/mp4" />
