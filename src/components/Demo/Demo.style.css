@@ -15,6 +15,7 @@
 
 .demo-container .heading {
   margin-bottom: 20px;
+  color: var(--text-primary);
 }
 
 .demo-video {
@@ -22,6 +23,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .demo-video > video {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 import Header from "./components/Header/Header.component";
 import Landing from "./components/Landing/Landing.component";
 import Tutorials from "./components/Tutorials/Tutorials.component";
@@ -25,30 +25,22 @@ const App = () => {
         </Route>
         <Route path="/tutorials">
           <div className="main">
-            <Container className="container-box rounded">
-              <Tutorials />
-            </Container>
+            <Tutorials />
           </div>
         </Route>
         <Route path="/demo">
           <div className="main">
-            <Container className="container-box rounded">
-              <Demo />
-            </Container>
+            <Demo />
           </div>
         </Route>
         {/* <Route path="/team">
           <div className="main">
-            <Container className="container-box rounded">
-              <Team />
-            </Container>
+            <Team />
           </div>
         </Route> */}
         <Route path="/contact">
           <div className="main">
-            <Container className="container-box rounded">
-              <Contact />
-            </Container>
+            <Contact />
           </div>
         </Route>
       </Switch>
