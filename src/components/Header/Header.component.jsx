@@ -23,7 +23,8 @@ const Header = () => {
       className="animate-navbar nav-theme justify-content-between navbar-custom"
     >
       <Navbar.Brand href="/" className="navbar-logo">
-        NEURA<span>LAXY</span>
+        {/* NEURA<span>LAXY</span> */}
+        <span>Neuralaxy</span>
         {/* <img src={logo} alt="" /> */}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -32,7 +33,7 @@ const Header = () => {
         className="navbar-collapse-custom"
       >
         <Nav className="ml-auto">
-          <Nav.Link onClick={() => navigateTo("tutorials")}>Tutorials</Nav.Link>
+          <Nav.Link onClick={() => navigateTo("tutorials")} className="nav-link-custom">Tutorials</Nav.Link>
           <Nav.Link onClick={() => navigateTo("demo")}>Demo</Nav.Link>
           {/* <Nav.Link onClick={() => navigateTo("team")}>Team</Nav.Link> */}
           {/* <Nav.Link onClick={() => navigateTo("testimonials")}>

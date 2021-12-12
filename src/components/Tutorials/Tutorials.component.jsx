@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Tutorial1 from "./Tutorial1/Tutorial1.component";
 import Tutorial2 from "./Tutorial2/Tutorial2.component";
 import Tutorial3 from "./Tutorial3/Tutorial3.component";
@@ -7,6 +7,14 @@ import "./Tutorials.style.css";
 
 const Tutorials = () => {
   const [tutorialNumber, setTutorialNumber] = useState(1);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   const toggleSelected = (id) => {
     var bar1 = document.getElementById("bar1");

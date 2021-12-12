@@ -1,11 +1,21 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Card, Col, Form, Row } from "react-bootstrap";
 import emailjs from "emailjs-com";
+import logo from "../../assets/images/logo_with-bg_500.png";
 
 import "./Contact.style.css";
 
 const Contact = () => {
   const form = useRef();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   const sendEmail = async (e) => {
     e.preventDefault();
     await emailjs
@@ -21,9 +31,9 @@ const Contact = () => {
       .catch((error) => {
         alert("Error! Please try again! ", error);
       });
-
     e.target.reset();
   };
+
   return (
     <section id="contact">
       <div className="container">
@@ -91,6 +101,9 @@ const Contact = () => {
                   </Form>
                 </Col>
                 <Col className="col-md-6 address">
+                  <div className="logo-img">
+                    <img src={ logo } alt="" />
+                  </div>
                   <h2 className="main-heading">Address Information</h2>
                   <div className="underline"></div>
                   <p>Neuralaxy LLC, registered in Delaware, USA</p>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Description from "./Description/Description.component";
 import Features from "./Features/Features.component";
 import Specifications from "./Specifications/Specifications.component";
@@ -10,12 +10,20 @@ import Support from "./Support/Support.component";
 import "./Landing.style.css";
 
 const Landing = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <section id="landing">
       <div className="container">
         <div className="heading">
           <h1>NeuroStimDuino</h1>
-          <span>by Neuralaxy</span>
+          {/* <span>by Neuralaxy</span> */}
         </div>
         <div className="desc">
           <h4>

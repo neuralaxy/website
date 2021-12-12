@@ -1,10 +1,17 @@
-import React from "react";
-// import Vimeo from "@u-wave/react-vimeo";
-import demo1 from "../../assets/videos/NeuroStimDuino_Demo_final.mp4";
+import React, { useEffect } from "react";
+import Vimeo from "@u-wave/react-vimeo";
 
 import "./Demo.style.css";
 
 const Demo = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <section id="demo">
       <div className="container">
@@ -18,9 +25,12 @@ const Demo = () => {
             </li>
           </ul>
           <div className="demo-video">
-            <video controls>
-              <source src={demo1} type="video/mp4" />
-            </video>
+            <Vimeo
+              className="video"
+              video="https://player.vimeo.com/video/654477763?h=aba810534f"
+              autoplay={false}
+              responsive
+            />
           </div>
         </div>
       </div>
