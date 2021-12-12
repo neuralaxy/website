@@ -27,6 +27,19 @@
   box-shadow: none;
 }
 
+.logo-img {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-img > img {
+  width: 60%;
+}
+
+.main-heading {
+  color: var(--text-primary);
+}
+
 @media (max-width: 767px) {
   .custom-row {
     display: flex;

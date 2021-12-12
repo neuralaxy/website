@@ -22,7 +22,8 @@
 }
 
 .left-bar-item {
-  background: rgba(0, 178, 172, 0.6);
+  /* background: rgba(0, 178, 172, 0.6); */
+  background: rgb(209, 232, 226);
   border-radius: 5px;
   padding: 10px 5px;
   margin: 10px 0;
@@ -30,12 +31,13 @@
 }
 
 .left-bar-item:hover {
-  background: rgba(0, 178, 172, 1);
+  background: rgb(77, 184, 155);
   transition: all 300ms ease-in-out;
 }
 
 .selected {
-  background: rgba(0, 178, 172, 1);
+  background: rgb(77, 184, 155);
+  color: #ffffff;
 }
 
 .right-bar {
@@ -45,4 +47,18 @@
 
 .right-bar > div > h3 {
   padding-top: 10px;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .tutorials-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-bar {
+    max-height: 150px;
+    overflow-y: scroll;
+    width: 100%;
+  }
 }
