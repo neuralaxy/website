@@ -9,7 +9,14 @@ const PinoutDiagram = () => {
       <h3>Pinout Diagram</h3>
       <br />
       <div className="img-container">
-        <img src={img4} className="pinout-img" alt="" />
+        <img
+          src={img4}
+          onClick={() =>
+            window.open(`${img4}`, "_blank", "noopener, noreferrer")
+          }
+          className="pinout-img"
+          alt=""
+        />
       </div>
     </>
   );

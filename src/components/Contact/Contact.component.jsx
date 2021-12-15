@@ -102,9 +102,9 @@ const Contact = () => {
                 </Col>
                 <Col className="col-md-6 address">
                   <div className="logo-img">
-                    <img src={ logo } alt="" />
+                    <img src={logo} alt="" />
                   </div>
-                  <h2 className="main-heading">Address Information</h2>
+                  <h2 className="main-heading">Contact</h2>
                   <div className="underline"></div>
                   <p>Neuralaxy LLC, registered in Delaware, USA</p>
                   {/* <p>+91 93608 42073</p> */}

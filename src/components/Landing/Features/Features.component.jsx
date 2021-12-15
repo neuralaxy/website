@@ -70,7 +70,13 @@ const Features = () => {
       </Accordion>
       <br />
       <div className="img-container">
-        <img src={img2} alt="" />
+        <img
+          src={img2}
+          onClick={() =>
+            window.open(`${img2}`, "_blank", "noopener, noreferrer")
+          }
+          alt=""
+        />
       </div>
     </>
   );

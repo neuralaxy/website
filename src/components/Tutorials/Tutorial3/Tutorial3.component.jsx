@@ -42,7 +42,13 @@ const Tutorial3 = () => {
       <ol>
         <li>
           Connect the first NeuroStimDuino to an Arduino:
-          <img src={img1} alt="" />
+          <img
+            src={img1}
+            onClick={() =>
+              window.open(`${img1}`, "_blank", "noopener, noreferrer")
+            }
+            alt=""
+          />
         </li>
         <li>
           Change its I²C address from 26 (default) to any other value (e.g. 30)
@@ -54,7 +60,13 @@ const Tutorial3 = () => {
           Now stack the second NeuroStimDuino on top of the first. Use the
           default I²C address for the second device or change it using the
           instructions in Step 2:
-          <img src={img2} alt="" />
+          <img
+            src={img2}
+            onClick={() =>
+              window.open(`${img2}`, "_blank", "noopener, noreferrer")
+            }
+            alt=""
+          />
         </li>
         <li>
           You are now ready to independently control both NeuroStimDuinos.

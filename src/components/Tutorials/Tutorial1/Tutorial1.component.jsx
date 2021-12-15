@@ -24,7 +24,13 @@ const Tutorial1 = () => {
           If you just ordered the NeuroStimDuino board (without the accessory
           pack), then you will have received the following components.
           <br />
-          <img src={img1} alt="" />
+          <img
+            src={img1}
+            onClick={() =>
+              window.open(`${img1}`, "_blank", "noopener, noreferrer")
+            }
+            alt=""
+          />
         </li>
         <li>
           If you have ordered the accessory pack as well, then you will also
@@ -32,7 +38,13 @@ const Tutorial1 = () => {
           hydrogel electrodes are required if you plan to stimulate a fake
           muscle (such as a Zucchini) or for your research.
           <br />
-          <img src={img2} alt="" />
+          <img
+            src={img2}
+            onClick={() =>
+              window.open(`${img2}`, "_blank", "noopener, noreferrer")
+            }
+            alt=""
+          />
         </li>
         <li>
           Finally, before you begin, please remember to review the safety
@@ -54,20 +66,38 @@ const Tutorial1 = () => {
           using an AC-DC adapter. However, if you must use an adapter, then you
           need an adapter with atleast 2 Amps output rating.
           <br />
-          <img src={img3} alt="" />
+          <img
+            src={img3}
+            onClick={() =>
+              window.open(`${img3}`, "_blank", "noopener, noreferrer")
+            }
+            alt=""
+          />
         </li>
         <li>
           For connecting the stimulation cables, you will have to remove the
           cable shroud or sheath cover as shown below and then plug it into the
           0.7mm DC Jack.
           <br />
-          <img src={img4} alt="" />
+          <img
+            src={img4}
+            onClick={() =>
+              window.open(`${img4}`, "_blank", "noopener, noreferrer")
+            }
+            alt=""
+          />
         </li>
         <li>
           Ensure the jumper settings for selecting the shape of the current
           waveforms are set to "x1" or Symmetrical, as shown below.
           <br />
-          <img src={img5} alt="" />
+          <img
+            src={img5}
+            onClick={() =>
+              window.open(`${img5}`, "_blank", "noopener, noreferrer")
+            }
+            alt=""
+          />
         </li>
         <li>
           The High-Voltage Power Switch S3 turns ON/OFF the +/-72V DC-DC
@@ -78,21 +108,39 @@ const Tutorial1 = () => {
           because the high-voltage source will be OFF. Plus it will also help
           extend battery life.
           <br />
-          <img src={img6} alt="" />
+          <img
+            src={img6}
+            onClick={() =>
+              window.open(`${img6}`, "_blank", "noopener, noreferrer")
+            }
+            alt=""
+          />
         </li>
         <li>
           To control NeuroStimDuino using an Arduino Due or Mega, stack
           NeuroStimDuino on top of the Arduino board by aligning the hearder
           pins, as shown below.
           <br />
-          <img src={img7} alt="" />
+          <img
+            src={img7}
+            onClick={() =>
+              window.open(`${img7}`, "_blank", "noopener, noreferrer")
+            }
+            alt=""
+          />
         </li>
         <li>
           Once the hardware setup is complete, the amber or yellow Emergency-OFF
           LED will remain continuously ON. Also TEST_LED1 and TEST_LED2 will
           start blinking at a rate of 10 Hz
           <br />
-          <img src={img8} alt="" />
+          <img
+            src={img8}
+            onClick={() =>
+              window.open(`${img8}`, "_blank", "noopener, noreferrer")
+            }
+            alt=""
+          />
         </li>
       </ul>
       <h4>Software Setup</h4>
@@ -124,7 +172,13 @@ const Tutorial1 = () => {
           established. It will also give a readout of the current stimulation
           parameters for each channel.
           <br />
-          <img src={img9} alt="" />
+          <img
+            src={img9}
+            onClick={() =>
+              window.open(`${img9}`, "_blank", "noopener, noreferrer")
+            }
+            alt=""
+          />
         </li>
         <li>
           You can type in some example commands into Serial Monitor and change
@@ -154,7 +208,13 @@ const Tutorial1 = () => {
           will not function properly and can be confusing. Hence, to avoid any
           cross-talk, its best to fold these pins out of the way as shown below.
           <br />
-          <img src={img10} alt="" />
+          <img
+            src={img10}
+            onClick={() =>
+              window.open(`${img10}`, "_blank", "noopener, noreferrer")
+            }
+            alt=""
+          />
         </li>
         <li>
           We hope you enjoy tinkering with NeuroStimDuino and use it for all

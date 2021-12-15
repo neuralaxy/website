@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <Navbar
-      collapseOnSelect
+      collapseOnSelect="true"
       fixed="top"
       expand="md"
       variant="dark"
@@ -33,7 +33,12 @@ const Header = () => {
         className="navbar-collapse-custom"
       >
         <Nav className="ml-auto">
-          <Nav.Link onClick={() => navigateTo("tutorials")} className="nav-link-custom">Tutorials</Nav.Link>
+          <Nav.Link
+            onClick={() => navigateTo("tutorials")}
+            className="nav-link-custom"
+          >
+            Tutorials
+          </Nav.Link>
           <Nav.Link onClick={() => navigateTo("demo")}>Demo</Nav.Link>
           {/* <Nav.Link onClick={() => navigateTo("team")}>Team</Nav.Link> */}
           {/* <Nav.Link onClick={() => navigateTo("testimonials")}>

@@ -9,7 +9,14 @@ const BoardLayout = () => {
       <h3>Board Layout</h3>
       <br />
       <div className="img-container">
-        <img src={img3} className="board-img" alt="" />
+        <img
+          src={img3}
+          onClick={() =>
+            window.open(`${img3}`, "_blank", "noopener, noreferrer")
+          }
+          className="board-img"
+          alt=""
+        />
       </div>
     </>
   );

@@ -54,7 +54,13 @@ const Description = () => {
       <br />
       <br />
       <div className="img-container">
-        <img src={img1} alt="" />
+        <img
+          src={img1}
+          onClick={() =>
+            window.open(`${img1}`, "_blank", "noopener, noreferrer")
+          }
+          alt=""
+        />
       </div>
       <br />
       <br />

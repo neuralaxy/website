@@ -73,14 +73,22 @@ const Tutorial2 = () => {
         electrodes on the forearm and 1 on the palm, I was able to implement a
         cylindrical grasp and hold a cup
       </p>
-      <img src={img1} alt="" />
+      <img
+        src={img1}
+        onClick={() => window.open(`${img1}`, "_blank", "noopener, noreferrer")}
+        alt=""
+      />
       <p>
         Today, I will share tips on how to map muscles of the hand, so that you
         know where exactly to attach the hydrogel electrodes onto the skin.
         These tips will be helpful not just when using NeuroStimDuino, but for
         any neurostimulator. First, lets review some anatomy of the hand.
       </p>
-      <img src={img2} alt="" />
+      <img
+        src={img2}
+        onClick={() => window.open(`${img2}`, "_blank", "noopener, noreferrer")}
+        alt=""
+      />
       <h4>Review Anatomy of Hand Flexors and Extensors</h4>
       <p>
         To generate finger flexion or extension, we need to stimulate the flexor
@@ -100,7 +108,11 @@ const Tutorial2 = () => {
         get stronger thumb flexion as well.
       </p>
       <h4>Sourcing and Sinking Current through a Muscle</h4>
-      <img src={img3} alt="" />
+      <img
+        src={img3}
+        onClick={() => window.open(`${img3}`, "_blank", "noopener, noreferrer")}
+        alt=""
+      />
       <p>
         The above sketch is a rough diagram of how neurostimulation works. You
         can imagine the stimulator (e.g. NeuroStimDuino) to behave as two
@@ -148,7 +160,11 @@ const Tutorial2 = () => {
         electrode, some tape, borrowed my son's percussion stick, and Voila! my
         handheld mapping probe was ready.
       </p>
-      <img src={img4} alt="" />
+      <img
+        src={img4}
+        onClick={() => window.open(`${img4}`, "_blank", "noopener, noreferrer")}
+        alt=""
+      />
       <h4>Steps to map Muscle Location using Handheld Probe</h4>
       <ol>
         <li>
@@ -179,7 +195,11 @@ const Tutorial2 = () => {
           Repeat the same procedure for mapping the extensor muscle locations.
         </li>
       </ol>
-      <img src={img5} alt="" />
+      <img
+        src={img5}
+        onClick={() => window.open(`${img5}`, "_blank", "noopener, noreferrer")}
+        alt=""
+      />
       <h4>Additional Resources</h4>
       <p>
         If you are interested in further instructions and video tutorials on the
