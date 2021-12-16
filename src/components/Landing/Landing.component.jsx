@@ -8,6 +8,7 @@ import PinoutDiagram from "./PinoutDiagram/PinoutDiagram.component";
 import Support from "./Support/Support.component";
 
 import "./Landing.style.css";
+import Partners from "./Partners/Partners.component";
 
 const Landing = () => {
   useEffect(() => {
@@ -53,6 +54,9 @@ const Landing = () => {
               <Support />
             </p>
           </div>
+        </div>
+        <div className="partners-container">
+          <Partners />
         </div>
       </div>
     </section>

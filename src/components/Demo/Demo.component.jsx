@@ -32,6 +32,34 @@ const Demo = () => {
               responsive
             />
           </div>
+          <ul>
+            <li>
+              <h3>
+                Contra-laterally Controlled Neuromuscular Stimulation Therapy
+              </h3>
+            </li>
+          </ul>
+          <div className="demo-video">
+            <Vimeo
+              className="video"
+              video="https://player.vimeo.com/video/656995396?h=b4c8c9f7a1"
+              autoplay={false}
+              responsive
+            />
+          </div>
+          <ul>
+            <li>
+              <h3>Electro-tactile stimulation using NeuroStimDuino</h3>
+            </li>
+          </ul>
+          <div className="demo-video">
+            <Vimeo
+              className="video"
+              video="https://player.vimeo.com/video/656995464?h=1557de532b"
+              autoplay={false}
+              responsive
+            />
+          </div>
         </div>
       </div>
     </section>

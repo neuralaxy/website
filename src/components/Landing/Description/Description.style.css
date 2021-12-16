@@ -17,3 +17,15 @@
   width: 50%;
   height: auto;
 }
+
+.navigate-to-demo {
+  color: var(--text-primary);
+  font-style: italic;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navigate-to-demo:hover {
+  color: #076663;
+  text-decoration: underline;
+}

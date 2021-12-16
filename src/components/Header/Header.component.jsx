@@ -44,6 +44,13 @@ const Header = () => {
           {/* <Nav.Link onClick={() => navigateTo("testimonials")}>
             Testimonials
           </Nav.Link> */}
+          <Nav.Link
+            href="https://www.mouser.in/ProductDetail/Neuralaxy/CS-NEUROSTIM-01?qs=QNEnbhJQKvY9Tz7O%252BXdcKw=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Buy
+          </Nav.Link>
           <Nav.Link onClick={() => navigateTo("contact")}>Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>

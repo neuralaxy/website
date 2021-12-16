@@ -20,10 +20,10 @@ const Contact = () => {
     e.preventDefault();
     await emailjs
       .sendForm(
-        "service_neurostimduino",
-        "template_neurostimduino",
+        "service_neuralaxy",
+        "template_neuralaxy",
         form.current,
-        "user_TT49ZL3S72S2RBUz2soT9"
+        "user_jqttQ5XcPG5Ll5bgbZph4"
       )
       .then((res) => {
         alert("Message delivered successfully! ", res);

@@ -28,11 +28,11 @@ const Tutorial3 = () => {
             NeuroStimDuino's current address will be changed to{" "}
             <span className="highlight">new_address</span>, and the Arduino will
             start sending I²C messages to that address. When{" "}
-            <span className="highlight">program/switch_only</span>
-            is set to <span className="highlight">0</span>, NeuroStimDuino's
-            current address will not be changed. Only the peripheral address
-            stored within Arduino will be updated so that it can start
-            communicating with a different peripheral device.
+            <span className="highlight">program/switch_only</span> is set to{" "}
+            <span className="highlight">0</span>, NeuroStimDuino's current
+            address will not be changed. Only the peripheral address stored
+            within Arduino will be updated so that it can start communicating
+            with a different peripheral device.
           </li>
         </ul>
       </p>
