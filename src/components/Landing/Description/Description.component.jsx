@@ -1,10 +1,17 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import img1 from "../../../assets/images/Neurostimduino-angle-02.png";
 import Vimeo from "@u-wave/react-vimeo";
 
 import "./Description.style.css";
 
 const Description = () => {
+  let history = useHistory();
+
+  const navigateTo = (str) => {
+    history.push(`/${str}`);
+  };
+
   return (
     <>
       <div className="video-player">
@@ -54,7 +61,13 @@ const Description = () => {
       <br />
       <br />
       <div className="img-container">
-        <img src={img1} alt="" />
+        <img
+          src={img1}
+          onClick={() =>
+            window.open(`${img1}`, "_blank", "noopener, noreferrer")
+          }
+          alt=""
+        />
       </div>
       <br />
       <br />
@@ -64,7 +77,11 @@ const Description = () => {
       management and the restoration of mobility to paralyzed extremities. It
       can also provide sensory feedback to amputees and stimulate the
       transcutaneous vagus nerve to study the effects of neurostimulation on
-      depression, arthritis, and other conditions.
+      depression, arthritis, and other conditions. Check out our{" "}
+      <span className="navigate-to-demo" onClick={() => navigateTo("demo")}>
+        Demo
+      </span>{" "}
+      page for more ideas on how to use NeuroStimDuino in your research.
       <br />
       <br />
       <i>

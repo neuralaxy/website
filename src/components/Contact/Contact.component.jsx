@@ -20,10 +20,10 @@ const Contact = () => {
     e.preventDefault();
     await emailjs
       .sendForm(
-        "service_neurostimduino",
-        "template_neurostimduino",
+        "service_neuralaxy",
+        "template_neuralaxy",
         form.current,
-        "user_TT49ZL3S72S2RBUz2soT9"
+        "user_jqttQ5XcPG5Ll5bgbZph4"
       )
       .then((res) => {
         alert("Message delivered successfully! ", res);
@@ -102,9 +102,9 @@ const Contact = () => {
                 </Col>
                 <Col className="col-md-6 address">
                   <div className="logo-img">
-                    <img src={ logo } alt="" />
+                    <img src={logo} alt="" />
                   </div>
-                  <h2 className="main-heading">Address Information</h2>
+                  <h2 className="main-heading">Contact</h2>
                   <div className="underline"></div>
                   <p>Neuralaxy LLC, registered in Delaware, USA</p>
                   {/* <p>+91 93608 42073</p> */}

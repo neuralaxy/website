@@ -1,10 +1,13 @@
-a {
+a,
+.navigate-to-contact {
   color: var(--text-primary);
   font-style: italic;
   text-decoration: none;
+  cursor: pointer;
 }
 
-a:hover {
+a:hover,
+.navigate-to-contact:hover {
   color: #076663;
   text-decoration: underline;
 }

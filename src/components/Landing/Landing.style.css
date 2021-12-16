@@ -47,6 +47,11 @@
   padding-bottom: 5px;
 }
 
+.partners-container {
+  text-align: center;
+  padding: 10px;
+}
+
 @media (max-width: 525px) {
   .heading > h1 {
     font-size: 40px;

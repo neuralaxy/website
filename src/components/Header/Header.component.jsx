@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <Navbar
-      collapseOnSelect
+      collapseOnSelect="true"
       fixed="top"
       expand="md"
       variant="dark"
@@ -33,12 +33,24 @@ const Header = () => {
         className="navbar-collapse-custom"
       >
         <Nav className="ml-auto">
-          <Nav.Link onClick={() => navigateTo("tutorials")} className="nav-link-custom">Tutorials</Nav.Link>
+          <Nav.Link
+            onClick={() => navigateTo("tutorials")}
+            className="nav-link-custom"
+          >
+            Tutorials
+          </Nav.Link>
           <Nav.Link onClick={() => navigateTo("demo")}>Demo</Nav.Link>
           {/* <Nav.Link onClick={() => navigateTo("team")}>Team</Nav.Link> */}
           {/* <Nav.Link onClick={() => navigateTo("testimonials")}>
             Testimonials
           </Nav.Link> */}
+          <Nav.Link
+            href="https://www.mouser.in/ProductDetail/Neuralaxy/CS-NEUROSTIM-01?qs=QNEnbhJQKvY9Tz7O%252BXdcKw=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Buy
+          </Nav.Link>
           <Nav.Link onClick={() => navigateTo("contact")}>Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>

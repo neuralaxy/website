@@ -1,0 +1,15 @@
+.partners-box {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.partners-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-img > img {
+  width: 50%;
+}
