@@ -1,6 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import logo from "../../assets/images/logo_without-bg_500.png";
 // import logoAlt from "../../assets/images/logo_with-bg_500.png";
 
@@ -16,7 +18,7 @@ const Header = () => {
 
   return (
     <Navbar
-      collapseOnSelect="true"
+      collapseOnSelect
       fixed="top"
       expand="md"
       variant="dark"
@@ -52,6 +54,13 @@ const Header = () => {
             Buy
           </Nav.Link>
           <Nav.Link onClick={() => navigateTo("contact")}>Contact</Nav.Link>
+          <Nav.Link
+            href="https://github.com/neuralaxy/NeuroStimDuino"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -10,10 +10,10 @@ const Partners = () => {
       <h1>Our Partners</h1>
       <div className="partners-box">
         <div className="partners-img">
-          <img src={img1} alt="" />
+          <img src={img1} alt="" className="img1" />
         </div>
         <div className="partners-img">
-          <img src={img2} alt="" />
+          <img src={img2} alt="" className="img2" />
         </div>
       </div>
     </>
