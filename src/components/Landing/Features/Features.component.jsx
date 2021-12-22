@@ -34,7 +34,7 @@ const Features = () => {
               </li>
               <li>
                 Has two independent output channels per board. Multiple boards
-                can be stacked to generate up to 256 channels.
+                can be stacked to generate up to 222 channels.
               </li>
               <li>
                 Onboard opto-isolators separate digital and analog signals

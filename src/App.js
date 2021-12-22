@@ -6,6 +6,7 @@ import Landing from "./components/Landing/Landing.component";
 import Tutorials from "./components/Tutorials/Tutorials.component";
 import Demo from "./components/Demo/Demo.component";
 // import Team from "./components/Team/Team.component";
+// import Testimonials from "./components/Testimonials/Testimonials.component";
 import Contact from "./components/Contact/Contact.component";
 
 import "./App.css";
@@ -36,6 +37,11 @@ const App = () => {
         {/* <Route path="/team">
           <div className="main">
             <Team />
+          </div>
+        </Route> */}
+        {/* <Route path="/testimonials">
+          <div className="main">
+            <Testimonials />
           </div>
         </Route> */}
         <Route path="/contact">

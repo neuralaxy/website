@@ -19,6 +19,7 @@ const Description = () => {
           className="video"
           video="https://player.vimeo.com/video/522539924?h=457ae7e579"
           autoplay={false}
+          loop={true}
           responsive
         />
       </div>
